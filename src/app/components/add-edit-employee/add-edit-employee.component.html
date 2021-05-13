@@ -1,0 +1,34 @@
+
+    <div class="form-group">
+      <label for="">First name</label>
+      <input type="text" class="form-control" [(ngModel)]="firstName">
+    
+    </div>
+    <div class="form-group">
+      <label for="">Last name</label>
+      <input type="text" class="form-control" [(ngModel)]="lastName">
+    </div>
+
+      <div class="form-group">
+        <label for="">Gender</label>
+        <input type="text" class="form-control" [(ngModel)]="gender">
+      </div>
+
+      <div class="form-group">
+        <label for="">Cell number</label>
+        <input type="text" class="form-control" [(ngModel)]="cellNumber">
+      </div>
+
+      <div class="form-group">
+        <label for="">Department</label>
+        <input type="text" class="form-control" [(ngModel)]="department">
+      </div>
+
+      <div class="form-group">
+        <label for="">Date of joining</label>
+        <input type="text" class="form-control" [(ngModel)]="dateOfJoining">
+      </div>
+
+    <button (click)="addEmployee()" type="submit" class="btn btn-primary" *ngIf="!employee.id">Add employee</button>
+    <button (click)="updateEmployee()" type="submit" class="btn btn-primary" *ngIf="employee.id">Update employee</button>
+
